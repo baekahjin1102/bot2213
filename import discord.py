@@ -97,6 +97,8 @@ async def on_ready():
     print(f'Logged in as {bot.user}')
 
 # 봇 토큰으로 봇 실행
-bot.run('MTIyNzU3MTk2OTk3Nzg4MDU5Ng.G79oYi.zjFaVSufpINuwSMTyFxc2ALcvDbO65aXTi8bmM')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
+
 
 
